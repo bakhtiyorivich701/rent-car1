@@ -1,0 +1,840 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/js/all.min.js" integrity="sha512-6sSYJqDreZRZGkJ3b+YfdhB3MzmuP9R7X1QZ6g5aIXhRvR1Y/N/P47jmnkENm7YL3oqsmI6AK+V6AD99uWDnIw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <script src="jquery-3.7.1.js"></script>
+    <script src="jquery-3.7.1.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $(".bar").click(function () {
+                $('.menu').css({
+                    'transform': 'translateX(0)',
+                });
+            });
+
+            $(".close").click(function () {
+                $('.menu').css({
+                    'transform': 'translateX(150%)',
+                });
+            });
+
+            $(".out").click(function () {
+                $('.menu').css({
+                    'transform': 'translateX(150%)',
+                });
+            });
+        });
+    </script>
+</head>
+<body>
+    <header class="header">
+        <div class="logo"><h2>Rent car</h2></div>
+        <ul class="links">
+            <li><a href="#home">home</a></li>
+            <li><a href="#cars">cars</a></li>
+            <li><a href="#about">about us</a></li>
+            <li><a href="#contact">contact</a></li>
+        </ul>
+        
+
+        <div class="menu-bar">
+            <i class="fa-solid fa-bars bar"></i>
+        </div>
+        <div class="menu">
+            <ul class="links1">
+                <i class="fa-solid fa-x close"></i>
+                <li><a href="#home" class="out">home</a></li>
+                <li><a href="#cars" class="out">cars</a></li>
+                <li><a href="#about" class="out">about us</a></li>
+                <li><a href="#contact" class="out">contact</a></li>
+            </ul>
+            </i>
+        </div>
+    </header>
+
+    
+
+    <div class="home" id="home">
+    <div class="text">
+      <div class="text1">
+        <strong>CAR RENTAL</strong><br>
+        IN TASHKENT IN 10 MINUTES!
+      </div>
+      <div class="text2">
+        Leave a request or call us <br>
+        within 10 minutes and get <br>
+        car
+        <strong>with unlimited mileage!</strong>
+      </div>
+    </div>
+    <a href="#" role="button" aria-haspopup="dialog">Order now</a>
+    </div>
+
+    <div class="cars" id="cars">
+        <div class="carss">
+        <h3>CHOOSE THE BEST OFFER RIGHT NOW</h3>
+        <div class="column">
+            <div class="row">
+                <h2>Chevrolet Malibu 2</h2>
+                <img src="./img/img1.png" alt="">
+                <p>1 000 000 UZS</p>
+                <button class="btn1">ORDER NOW</button>
+                <button class="btn2" onclick="open1()">MORE DETAILS</button>
+            </div>
+            <div class="row">
+                <h2>Kia K5</h2>
+                <img src="./img/img2.png" alt="">
+                <p>1 200 000 UZS</p>
+                <button class="btn1">ORDER NOW</button>
+                <button class="btn2" onclick="open2()">MORE DETAILS</button>
+            </div>
+            <div class="row">
+                <h2>Mercedes-Benz W212</h2>
+                <img src="./img/img3.png" alt="">
+                <p>1 200 000 UZS</p>
+                <button class="btn1">ORDER NOW</button>
+                <button class="btn2" onclick="open3()">MORE DETAILS</button>
+            </div>
+        </div>
+        <div class="column">
+            <div class="row">
+                <h2>Gentra</h2>
+                <img src="./img/img4.png" alt="">
+                <p>450 000 UZS</p>
+                <button class="btn1">ORDER NOW</button>
+                <button class="btn2" onclick="open4()">MORE DETAILS</button>
+            </div>
+            <div class="row">
+                <h2>XPeng G3</h2>
+                <img src="./img/img5.png" alt="">
+                <p>900 000 UZS</p>
+                <button class="btn1">ORDER NOW</button>
+                <button class="btn2" onclick="open5()">MORE DETAILS</button>
+            </div>
+            <div class="row">
+                <h2>kia carnival</h2>
+                <img src="./img/img6.png" alt="">
+                <p>2 000 000 UZS</p>
+                <button class="btn1">ORDER NOW</button>
+                <button class="btn2" onclick="open6()">MORE DETAILS</button>
+            </div>
+        </div>
+        <div class="column">
+            <div class="row">
+                <h2>Chevrolet onix</h2>
+                <img src="./img/img7.png" alt="">
+                <p>550 000 UZS</p>
+                <button class="btn1">ORDER NOW</button>
+                <button class="btn2" onclick="open7()">MORE DETAILS</button>
+            </div>
+            <div class="row">
+                <h2>Skoda Kodiaq</h2>
+                <img src="./img/img8.png" alt="">
+                <p>1 300 000 UZS</p>
+                <button class="btn1">ORDER NOW</button>
+                <button class="btn2" onclick="open8()">MORE DETAILS</button>
+            </div>
+            <div class="row">
+                <h2>COBALT</h2>
+                <img src="./img/img1.png" alt="">
+                <p>1 100 000 UZS</p>
+                <button class="btn1">ORDER NOW</button>
+                <button class="btn2" onclick="open1()">MORE DETAILS</button>
+            </div>
+        </div>
+
+        <div class="column">
+            <div class="row">
+                <h2>Chevrolet monza</h2>
+                <img src="./img/img1.png" alt="">
+                <p>700 000 UZS</p>
+                <button class="btn1">ORDER NOW</button>
+                <button class="btn2" onclick="open10()">MORE DETAILS</button>
+            </div>
+        </div>
+    </div>
+    
+  
+
+
+
+    <div class="car1" id="car1">
+        <button onclick="close1()" class="btn4"><i class="fa-solid fa-x close"></i></button>
+        <div class="column">
+            <div class="img">
+                <div class="swiper mySwiper">
+                    <div class="swiper-wrapper">
+                      <div class="swiper-slide"><img src="./img/ml1.png" alt=""></div>
+                      <div class="swiper-slide"><img src="./img/ml2.png" alt=""></div>
+                      <div class="swiper-slide"><img src="./img/ml4.png" alt=""></div>
+                    </div>
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"></div>
+                  </div>
+            </div>
+            <div class="txt">
+               <h2>Chevrolet Malibu 2</h2>
+               <a href="#footer" onclick="a1()">Oreder now</a>
+               <ul>
+                <li>Cost: 1,000,000 UZS</li>
+                <li>Deposit: 4,000,000 UZS</li>
+                <li>Insurance: CASCO</li>
+                <li>Transmission: automatic</li>
+                <li>Power - 250 hp</li>
+                <li>Drive - front</li>
+                <li>Fuel consumption per 100 km - 10 liters.</li>
+                <li>Doors: 4</li>
+                <li>Number of seats (with driver): 5</li>
+                <li>Trunk: 477 l.</li>
+                <li>Air conditioning - yes</li>
+                <li>Fuel: gasoline</li>
+               </ul>
+            </div>
+        </div>
+    </div>
+    <div class="car2" id="car2">
+        <button onclick="close1()" class="btn4"><i class="fa-solid fa-x close"></i></button>
+        <div class="column">
+            <div class="img">
+                <div class="swiper mySwiper">
+                    <div class="swiper-wrapper">
+                      <div class="swiper-slide"><img src="./img/k1.jpg" alt=""></div>
+                      <div class="swiper-slide"><img src="./img/k2.jpg" alt=""></div>
+                    </div>
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"></div>
+                  </div>
+            </div>
+            <div class="txt">
+               <h2>Kia K5</h2>
+               <a href="#footer" onclick="a1()">Oreder now</a>
+               <ul>
+                <li>Cost: 1,200,000 UZS</li>
+                <li>Deposit:4,000000 UZS</li>
+                <li>Insurance:CASCO</li>
+                <li>Transmission:automatic</li>
+                <li>Power - 194 hp</li>
+                <li>Drive - front</li>
+                <li>Fuel 100 km - 9 l.</li>
+                <li>Doors: 4</li>
+                <li>Number of seats: 5</li>
+                <li>Trunk: 510 l</li>
+                <li>Air conditioning - yes</li>
+                <li>Fuel: gasoline</li>
+               </ul>
+            </div>
+        </div>
+    </div>
+    <div class="car3" id="car3">
+        <button onclick="close1()" class="btn4"><i class="fa-solid fa-x close"></i></button>
+        <div class="column">
+            <div class="img">
+                <div class="swiper mySwiper">
+                    <div class="swiper-wrapper">
+                      <div class="swiper-slide"><img src="./img/mr1.jpg" alt=""></div>
+                      <div class="swiper-slide"><img src="./img/mr2.jpg" alt=""></div>
+                    </div>
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"></div>
+                  </div>
+            </div>
+            <div class="txt">
+               <h2>Mercedes-Benz W212</h2>
+               <a href="#footer" onclick="a1()">Oreder now</a>
+               <ul>
+                <li>Cost: 1,200,000 UZS</li>
+                <li>Deposit: 4,000,000 UZS</li>
+                <li>Insurance: CASCO</li>
+                <li>Transmission: automatic</li>
+                <li>Power - 194 hp</li>
+                <li>Drive - rear</li>
+                <li>Fuel consumption per 100 km - 8 liters.</li>
+                <li>Doors: 4</li>
+                <li>Number of seats (with driver): 5</li>
+                <li>Trunk: 540 l</li>
+                <li>Air conditioning - yes</li>
+                <li>Fuel: gasoline</li>
+               </ul>
+            </div>
+        </div>
+    </div>
+    <div class="car4" id="car4">
+        <button onclick="close1()" class="btn4"><i class="fa-solid fa-x close"></i></button>
+        <div class="column">
+            <div class="img">
+                <div class="swiper mySwiper">
+                    <div class="swiper-wrapper">
+                      <div class="swiper-slide"><img src="./img/gn1.png" alt=""></div>
+                      <div class="swiper-slide"><img src="./img/gn2.png" alt=""></div>
+                      <div class="swiper-slide"><img src="./img/gn3.png" alt=""></div>
+                    </div>
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"></div>
+                  </div>
+            </div>
+            <div class="txt">
+               <h2>Gentra</h2>
+               <a href="#footer" onclick="a1()">Oreder now</a>
+               <ul>
+                <li>Cost: 450 000 UZS</li>
+                <li>Deposit: 3,000,000 UZS</li>
+                <li>Insurance: CASCO</li>
+                <li>Transmission: automatic</li>
+                <li>Power - 107 hp</li>
+                <li>Drive - front</li>
+                <li>Fuel consumption per 100 km - 7 liters.</li>
+                <li>Doors: 4</li>
+                <li>Number of seats (with driver): 5</li>
+                <li>Trunk: 430 l</li>
+                <li>Air conditioning - yes</li>
+                <li>Fuel: gasoline</li>
+               </ul>
+            </div>
+        </div>
+    </div>
+
+    <div class="car5" id="car5">
+        <button onclick="close1()" class="btn4"><i class="fa-solid fa-x close"></i></button>
+        <div class="column">
+            <div class="img">
+                <div class="swiper mySwiper">
+                    <div class="swiper-wrapper">
+                      <div class="swiper-slide"><img src="./img/fm1.png" alt=""></div>
+                      <div class="swiper-slide"><img src="./img/fm2.png" alt=""></div>
+                      <div class="swiper-slide"><img src="./img/fm3.png" alt=""></div>
+                    </div>
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"></div>
+                  </div>
+            </div>
+            <div class="txt">
+               <h2>XPeng G3</h2>
+               <a href="#footer" onclick="a1()">Oreder now</a>
+               <ul>
+                <li>Cost: 900 000 UZS</li>
+                <li>Deposit: 4,000,000 UZS</li>
+                <li>Insurance: CASCO</li>
+                <li>Transmission: automatic</li>
+                <li>Power - 190 hp</li>
+                <li>Drive - front</li>
+                <li>The power reserve on a full battery charge is 360 km.</li>
+                <li>Doors: 4</li>
+                <li>Number of seats (with driver): 5</li>
+                <li>Trunk: 390 l</li>
+                <li>Air conditioning - yes</li>
+                <li>Fuel: electric</li>
+               </ul>
+            </div>
+        </div>
+    </div>
+
+    <div class="car6" id="car6">
+        <button onclick="close1()" class="btn4"><i class="fa-solid fa-x close"></i></button>
+        <div class="column">
+            <div class="img">
+                <div class="swiper mySwiper">
+                    <div class="swiper-wrapper">
+                      <div class="swiper-slide"><img src="./img/kia1.png" alt=""></div>
+                      <div class="swiper-slide"><img src="./img/kia2.png" alt=""></div>
+                      <div class="swiper-slide"><img src="./img/kia3.png" alt=""></div>
+                      <div class="swiper-slide"><img src="./img/kia4.png" alt=""></div>
+                      <div class="swiper-slide"><img src="./img/kia5.png" alt=""></div>
+                    </div>
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"></div>
+                  </div>
+            </div>
+            <div class="txt">
+               <h2>Kia Carnival</h2>
+               <a href="#footer" onclick="a1()">Oreder now</a>
+               <ul>
+                <li>Cost: 2,000,000 UZS</li>
+                <li>Deposit: 4,000,000 UZS</li>
+                <li>Insurance: CASCO</li>
+                <li>Transmission: automatic</li>
+                <li>Power - 272 hp</li>
+                <li>Drive - front</li>
+                <li>Fuel consumption per 100 km - 9 liters.</li>
+                <li>Doors: 4</li>
+                <li>Number of seats (with driver): 7</li>
+                <li>Trunk: 627 l.</li>
+                <li>Air conditioning - yes</li>
+                <li>Fuel: gasoline</li>
+               </ul>
+            </div>
+        </div>
+    </div>
+
+    <div class="car7" id="car7">
+        <button onclick="close1()" class="btn4"><i class="fa-solid fa-x close"></i></button>
+        <div class="column">
+            <div class="img">
+                <div class="swiper mySwiper">
+                    <div class="swiper-wrapper">
+                      <div class="swiper-slide"><img src="./img/onx1.png" alt=""></div>
+                      <div class="swiper-slide"><img src="./img/onx2.png" alt=""></div>
+                      <div class="swiper-slide"><img src="./img/onx3.png" alt=""></div>
+                    </div>
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"></div>
+                  </div>
+            </div>
+            <div class="txt">
+               <h2>Chevrolet onix 2022</h2>
+               <a href="#footer" onclick="a1()">Oreder now</a>
+               <ul>
+                <li>Cost: 550 000 UZS</li>
+                <li>Deposit: 3,000,000 UZS</li>
+                <li>Insurance: CASCO</li>
+                <li>Transmission: automatic</li>
+                <li>Power - 132 hp</li>
+                <li>Drive - front</li>
+                <li>Fuel consumption per 100 km - 6 liters.</li>
+                <li>Doors: 4</li>
+                <li>Number of seats (with driver): 5</li>
+                <li>Trunk: 469 l.</li>
+                <li>Air conditioning - yes</li>
+                <li>Fuel: gasoline</li>
+               </ul>
+            </div>
+        </div>
+    </div>
+
+    <div class="car8" id="car8">
+        <button onclick="close1()" class="btn4"><i class="fa-solid fa-x close"></i></button>
+        <div class="column">
+            <div class="img">
+                <div class="swiper mySwiper">
+                    <div class="swiper-wrapper">
+                      <div class="swiper-slide"><img src="./img/sk1.png" alt=""></div>
+                      <div class="swiper-slide"><img src="./img/sk2.png" alt=""></div>
+                      <div class="swiper-slide"><img src="./img/sk3.png" alt=""></div>
+                      <div class="swiper-slide"><img src="./img/sk4.png" alt=""></div>
+                    </div>
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"></div>
+                  </div>
+            </div>
+            <div class="txt">
+               <h2>Skoda Kodiaq 2021</h2>
+               <a href="#footer" onclick="a1()">Oreder now</a>
+               <ul>
+                <li>Cost: 1,300,000 UZS</li>
+                <li>Deposit: 4,000,000 UZS</li>
+                <li>Insurance: CASCO</li>
+                <li>Transmission: automatic</li>
+                <li>Power - 180 hpDrive - 4 WD</li>
+                <li>Fuel consumption per 100 km - 8 liters.</li>
+                <li>Doors: 4</li>
+                <li>Number of seats (with driver): 7</li>
+                <li>Trunk: 270 l.</li>
+                <li>Air conditioning - yes</li>
+                <li>Fuel: gasoline</li>
+               </ul>
+            </div>
+        </div>
+    </div>
+
+    <div class="car9" id="car9">
+        <button onclick="close1()" class="btn4"><i class="fa-solid fa-x close"></i></button>
+        <div class="column">
+            <div class="img">
+                <div class="swiper mySwiper">
+                    <div class="swiper-wrapper">
+                      <div class="swiper-slide"><img src="./img/cob1.png" alt=""></div>
+                      <div class="swiper-slide"><img src="./img/cob2.png" alt=""></div>
+                      <div class="swiper-slide"><img src="./img/cob3.png" alt=""></div>
+                    </div>
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"></div>
+                  </div>
+            </div>
+            <div class="txt">
+               <h2>CHEVROLET COBALT</h2>
+               <a href="#footer" onclick="a1()">Oreder now</a>
+               <ul>
+                <li>Cost: 400 000 UZS</li>
+                <li>Deposit: 3 000 000 UZS</li>
+                <li>Insurance: CASCO</li>
+                <li>Transmission: automatic</li>
+                <li>Power - 107 hp</li>
+                <li>Drive - front</li>
+                <li>Fuel consumption per 100 km - 6 liters.</li>
+                <li>Doors: 4</li>
+                <li>Number of seats (with driver): 5</li>
+                <li>Trunk: 430 l.</li>
+                <li>Air conditioning - yes</li>
+                <li>Fuel: gasoline</li>
+               </ul>
+            </div>
+        </div>
+    </div>
+
+    <div class="car10" id="car10">
+        <button onclick="close1()" class="btn4"><i class="fa-solid fa-x close"></i></button>
+        <div class="column">
+            <div class="img">
+                <div class="swiper mySwiper">
+                    <div class="swiper-wrapper">
+                      <div class="swiper-slide"><img src="./img/mn1.png" alt=""></div>
+                      <div class="swiper-slide"><img src="./img/mn2.png" alt=""></div>
+                      <div class="swiper-slide"><img src="./img/mn3.png" alt=""></div>
+                    </div>
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"></div>
+                  </div>
+            </div>
+            <div class="txt">
+               <h2>CHEVROLET MONZA</h2>
+               <a href="#footer" onclick="a1()">Oreder now</a>
+               <ul>
+                <li>Cost: 700 000 UZS</li>
+                <li>Deposit: 3 000 000 UZS</li>
+                <li>Insurance: CASCO</li>
+                <li>Transmission: automatic</li>
+                <li>Power - 113 hp</li>
+                <li>Drive - front</li>
+                <li>Fuel consumption per 100 km - 7 liters.</li>
+                <li>Doors: 4</li>
+                <li>Number of seats (with driver): 5</li>
+                <li>Trunk: 405 l.</li>
+                <li>Air conditioning - yes</li>
+                <li>Fuel: gasoline</li>
+               </ul>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+    <div class="about" id="about">
+       <h3>WHY CHOOSE US?</h3>
+       <div class="column">
+        <div class="row">
+            <img src="./img/pic1.png" alt="">
+            <h2>No mileage limits</h2>
+        </div>
+        <div class="row">
+            <img src="./img/pic2.png" alt="">
+            <h2>All-round tinting of all cars without surcharge</h2>
+        </div>
+        <div class="row">
+            <img src="./img/pic3.png" alt="">
+            <h2>Delivery anywhere in Tashkent</h2>
+        </div>
+       </div>
+       <div class="column">
+        <div class="row">
+            <img src="./img/pic4.png" alt="">
+            <h2>Full insurance
+                CASCO, OSAGO</h2>
+        </div>
+        <div class="row">
+            <img src="./img/pic5.png" alt="">
+            <h2>Paperwork
+                in 10 minutes</h2>
+        </div>
+        <div class="row">
+            <img src="./img/pic6.png" alt="">
+            <h2>The car is issued with
+                a full tank of gasoline</h2>
+        </div>
+       </div>
+       <div class="column">
+        <div class="row">
+            <img src="./img/pic7.png" alt="">
+            <h2>For orders of 3 days or more, the delivery and return of the car is free of charge at a convenient place and time for you</h2>
+        </div>
+        <div class="row">
+            <img src="./img/pic8.png" alt="">
+            <h2>Child seats are provided free of charge (on request)</h2>
+        </div>
+        <div class="row">
+            <img src="./img/pic9.png" alt="">
+            <h2>Beautiful numbers
+                on cars</h2>
+        </div>
+       </div>
+    </div>
+ 
+    <div class="contact" id="contact">
+        <h2>CONTACTS</h2>
+        <div class="column">
+            <div class="row">
+                <img src="./img/con1.png" alt="">
+                <p>+998 33 238 21 21</p>
+            </div>
+            <div class="row">
+                <img src="./img/con2.png" alt="">
+                <p>+998 33 221 21 21</p>
+            </div>
+        </div>
+        <div class="column">
+            <div class="row">
+                <img src="./img/con3.png" alt="">
+                <p>bakhtiyorivich701@gmail.com</p>
+            </div>
+            <div class="row">
+                <img src="./img/con4.png" alt="">
+                <p>Tashkent city, Shahar Yakkasaroy district, Shota Rustaveli Street, house 11 - A</p>
+            </div>
+        </div>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2997.771125830668!2d69.25785907656258!3d41.29208540190029!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x38ae8bf37d8d5ca1%3A0x76e36588bd292ebc!2sTechBrain%20academy!5e0!3m2!1sru!2s!4v1721714050001!5m2!1sru!2s" width="100%" height="550px" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+
+
+    <div class="form" id="footer">
+        <div class="column">
+            <div class="row">
+            <h2><b>Car rental</b>in Tashkent IN 10 MINUTES!</h2>
+            <p>Leave a request or call us<br>
+                within 10 minutes and get <br>
+            car <strong>with unlimited mileage!</strong></p>
+            </div>
+            <div class="row">
+              <form action="https://formspree.io/f/myzgkjej" method="POST">
+                <input type="text" id="username" name="username" required placeholder="name">
+                <input type="tel" id="phone" name="phone" pattern="[0-9]{2} [0-9]{3} [0-9]{2} [0-9]{2}" placeholder="99 999 99 99">
+                <button type="submit">Oreder now</button>             
+            </form>
+            </div>
+        </div>
+    </div>
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+
+    <script>
+
+$(document).ready(function(){
+            $(".bar").click(function(){
+		$(".memu").slideToggle(slow);
+	});
+        });
+
+
+
+var swiper = new Swiper(".mySwiper", {
+    navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev",
+    },
+  });
+
+
+  function close1() {
+    document.getElementById("car1").style.display = "none";
+    document.getElementById("car2").style.display = "none";
+    document.getElementById("car3").style.display = "none";
+    document.getElementById("car4").style.display = "none";
+    document.getElementById("car5").style.display = "none";
+    document.getElementById("car6").style.display = "none";
+    document.getElementById("car7").style.display = "none";
+    document.getElementById("car8").style.display = "none";
+    document.getElementById("car9").style.display = "none";
+    document.getElementById("car10").style.display = "none";
+}
+
+
+function a1() {
+    document.getElementById("car1").style.display = "none";
+    document.getElementById("car2").style.display = "none";
+    document.getElementById("car3").style.display = "none";
+    document.getElementById("car4").style.display = "none";
+    document.getElementById("car5").style.display = "none";
+    document.getElementById("car6").style.display = "none";
+    document.getElementById("car7").style.display = "none";
+    document.getElementById("car8").style.display = "none";
+    document.getElementById("car9").style.display = "none";
+    document.getElementById("car10").style.display = "none";
+}
+
+
+function open1() {
+    document.getElementById("car1").style.display = "block";
+    document.getElementById("car2").style.display = "none";
+    document.getElementById("car3").style.display = "none";
+    document.getElementById("car4").style.display = "none";
+    document.getElementById("car5").style.display = "none";
+    document.getElementById("car6").style.display = "none";
+    document.getElementById("car7").style.display = "none";
+    document.getElementById("car8").style.display = "none";
+    document.getElementById("car9").style.display = "none";
+    document.getElementById("car10").style.display = "none";
+}
+
+
+function open2() {
+    document.getElementById("car1").style.display = "none";
+    document.getElementById("car2").style.display = "block";
+    document.getElementById("car3").style.display = "none";
+    document.getElementById("car4").style.display = "none";
+    document.getElementById("car5").style.display = "none";
+    document.getElementById("car6").style.display = "none";
+    document.getElementById("car7").style.display = "none";
+    document.getElementById("car8").style.display = "none";
+    document.getElementById("car9").style.display = "none";
+    document.getElementById("car10").style.display = "none";
+}
+
+
+function open3() {
+    document.getElementById("car1").style.display = "none";
+    document.getElementById("car2").style.display = "none";
+    document.getElementById("car3").style.display = "block";
+    document.getElementById("car4").style.display = "none";
+    document.getElementById("car5").style.display = "none";
+    document.getElementById("car6").style.display = "none";
+    document.getElementById("car7").style.display = "none";
+    document.getElementById("car8").style.display = "none";
+    document.getElementById("car9").style.display = "none";
+    document.getElementById("car10").style.display = "none";
+}
+
+
+function open4() {
+    document.getElementById("car1").style.display = "none";
+    document.getElementById("car2").style.display = "none";
+    document.getElementById("car3").style.display = "none";
+    document.getElementById("car4").style.display = "block";
+    document.getElementById("car5").style.display = "none";
+    document.getElementById("car6").style.display = "none";
+    document.getElementById("car7").style.display = "none";
+    document.getElementById("car8").style.display = "none";
+    document.getElementById("car9").style.display = "none";
+    document.getElementById("car10").style.display = "none";
+}
+
+
+function open5() {
+    document.getElementById("car1").style.display = "none";
+    document.getElementById("car2").style.display = "none";
+    document.getElementById("car3").style.display = "none";
+    document.getElementById("car4").style.display = "none";
+    document.getElementById("car5").style.display = "block";
+    document.getElementById("car6").style.display = "none";
+    document.getElementById("car7").style.display = "none";
+    document.getElementById("car8").style.display = "none";
+    document.getElementById("car9").style.display = "none";
+    document.getElementById("car10").style.display = "none";
+}
+
+
+function open6() {
+    document.getElementById("car1").style.display = "none";
+    document.getElementById("car2").style.display = "none";
+    document.getElementById("car3").style.display = "none";
+    document.getElementById("car4").style.display = "none";
+    document.getElementById("car5").style.display = "none";
+    document.getElementById("car6").style.display = "block";
+    document.getElementById("car7").style.display = "none";
+    document.getElementById("car8").style.display = "none";
+    document.getElementById("car9").style.display = "none";
+    document.getElementById("car10").style.display = "none";
+}
+
+
+function open7() {
+    document.getElementById("car1").style.display = "none";
+    document.getElementById("car2").style.display = "none";
+    document.getElementById("car3").style.display = "none";
+    document.getElementById("car4").style.display = "none";
+    document.getElementById("car5").style.display = "none";
+    document.getElementById("car6").style.display = "none";
+    document.getElementById("car7").style.display = "block";
+    document.getElementById("car8").style.display = "none";
+    document.getElementById("car9").style.display = "none";
+    document.getElementById("car10").style.display = "none";
+}
+
+
+function open8() {
+    document.getElementById("car1").style.display = "none";
+    document.getElementById("car2").style.display = "none";
+    document.getElementById("car3").style.display = "none";
+    document.getElementById("car4").style.display = "none";
+    document.getElementById("car5").style.display = "none";
+    document.getElementById("car6").style.display = "none";
+    document.getElementById("car7").style.display = "none";
+    document.getElementById("car8").style.display = "block";
+    document.getElementById("car9").style.display = "none";
+    document.getElementById("car10").style.display = "none";
+}
+
+
+function open9() {
+    document.getElementById("car1").style.display = "none";
+    document.getElementById("car2").style.display = "none";
+    document.getElementById("car3").style.display = "none";
+    document.getElementById("car4").style.display = "none";
+    document.getElementById("car5").style.display = "none";
+    document.getElementById("car6").style.display = "none";
+    document.getElementById("car7").style.display = "none";
+    document.getElementById("car8").style.display = "none";
+    document.getElementById("car9").style.display = "block";
+    document.getElementById("car10").style.display = "none";
+}
+
+
+function open10() {
+    document.getElementById("car1").style.display = "none";
+    document.getElementById("car2").style.display = "none";
+    document.getElementById("car3").style.display = "none";
+    document.getElementById("car4").style.display = "none";
+    document.getElementById("car5").style.display = "none";
+    document.getElementById("car6").style.display = "none";
+    document.getElementById("car7").style.display = "none";
+    document.getElementById("car8").style.display = "none";
+    document.getElementById("car9").style.display = "none";
+    document.getElementById("car10").style.display = "block";
+}
+
+
+
+    </script>
+
+</body>
+</html>
